@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt6uj3a7n5kfv"]
+
+[ext_resource type="Script" path="res://script/spectro.gd" id="1_c0w35"]
+[ext_resource type="AudioStream" uid="uid://bysph8rd2sr0o" path="res://music/Cartoon - On & On (feat. Daniel Levi) [NCS Release] (320 kbps).mp3" id="2_l3o8y"]
+[ext_resource type="AudioStream" uid="uid://dx1l0hbxyfcvf" path="res://music/Stoic.mp3" id="2_ttip6"]
+
+[node name="Spectro" type="Node2D"]
+position = Vector2(476, 329)
+script = ExtResource("1_c0w35")
+Track = ExtResource("2_ttip6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_l3o8y")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 77.0
+offset_top = 40.0
+offset_right = 130.0
+offset_bottom = 71.0
+text = "Play"
+
+[node name="BtnPause" type="Button" parent="."]
+offset_left = 37.0
+offset_top = 41.0
+offset_right = 63.0
+offset_bottom = 72.0
+text = "||"
+
+[node name="BtnNext" type="Button" parent="."]
+offset_left = 142.0
+offset_top = 42.0
+offset_right = 194.0
+offset_bottom = 73.0
+text = "-->"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = -8.0
+offset_top = 40.0
+offset_right = 20.0
+offset_bottom = 71.0
+text = "<--"
+
+[node name="Track2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ttip6")
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_left = -22.0
+offset_top = 7.0
+offset_right = 292.0
+offset_bottom = 23.0
+max_value = 235.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="BtnPause" to="." method="_on_btn_pause_pressed"]
+[connection signal="pressed" from="BtnNext" to="." method="_on_btn_next_pressed"]

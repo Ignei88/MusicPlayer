@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bysph8rd2sr0o"
+path="res://.godot/imported/Cartoon - On & On (feat. Daniel Levi) [NCS Release] (320 kbps).mp3-0dc9695bb08822f34074aa867bdcbf9e.mp3str"
+
+[deps]
+
+source_file="res://music/Cartoon - On & On (feat. Daniel Levi) [NCS Release] (320 kbps).mp3"
+dest_files=["res://.godot/imported/Cartoon - On & On (feat. Daniel Levi) [NCS Release] (320 kbps).mp3-0dc9695bb08822f34074aa867bdcbf9e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
